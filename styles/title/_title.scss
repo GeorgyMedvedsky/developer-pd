@@ -1,0 +1,11 @@
+.title {
+  @include font(58px, 700, 1.2, $font-color-heavy);
+
+  &__block {
+    display: block;
+
+    &_accent {
+      @include font-gradient(right, $color-light-blue, $color-fuksy);
+    }
+  }
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <!-- <link rel="icon" href="favicon.ico" sizes="any"> -->
     <!-- <link rel="icon" href="icon.svg" type="image/svg+xml"> -->
@@ -14,17 +15,301 @@
     <!-- <meta name="description" content=""> -->
     <title>Document</title>
   </head>
-  <body class="page"></body>
+  <body class="page">
+    <header class="header">
+      <a href="#0" class="logo">
+        <img
+          class="logo__image"
+          src="./images/icons/logo-header.svg"
+          alt="Логотип"
+        />
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="index.html" class="menu__link">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#about" class="menu__link">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#stack" class="menu__link">Tech Stack</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#projects" class="menu__link">Projects</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#contacts" class="menu__link">Contact</a>
+          </li>
+        </ul>
+        <ul class="platform-list header__platform-list">
+          <li class="platform-list__item">
+            <a href="#0" class="platform-list__link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon_type_gh">
+                <use href="./images/icons/gh.svg#gh-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="platform-list__item">
+            <a href="#0" class="platform-list__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon_type_twitter"
+              >
+                <use href="./images/icons/twitter.svg#twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="platform-list__item">
+            <a href="#0" class="platform-list__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon_type_instagram"
+              >
+                <use href="./images/icons/instagram.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section about" id="about">
+        <h1 class="title about__title">
+          <span class="title__block">Hi 👋,</span>
+          <span class="title__block">My name is</span>
+          <span class="title__block title__block_accent">Pavan MG</span>
+          <span class="title__block">I build things for web</span>
+        </h1>
+        <div class="about__avatar-wrapper">
+          <img
+            class="about__avatar"
+            src="./images/avatar.webp"
+            alt="Черно-белая портретная фотография мужчины в футболке и солнцезащитных очках"
+          />
+        </div>
+      </section>
+      <section class="section stack" id="stack">
+        <h2 class="section__title">My tech stack</h2>
+        <p class="section__subtitle">
+          Technologies I've been working with recently
+        </p>
+        <ul class="stack__list">
+          <li class="stack__list-item">
+            <img src="./images/html5.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/css3.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/js.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/react.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/redux.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/bootstrap.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/tailwind.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/sass.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/git.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/gsap.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/vscode.svg" alt="" />
+          </li>
+          <li class="stack__list-item">
+            <img src="./images/github.svg" alt="" />
+          </li>
+        </ul>
+      </section>
+      <section class="section projects" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__subtitle">Things I've built so far</p>
+        <ul class="projects__list">
+          <li class="projects__list-item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__title"></h3>
+                <p class="card__description"></p>
+                <p class="card__tech"></p>
+                <ul class="card__links">
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li class="projects__list-item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__title"></h3>
+                <p class="card__description"></p>
+                <p class="card__tech"></p>
+                <ul class="card__links">
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li class="projects__list-item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__title"></h3>
+                <p class="card__description"></p>
+                <p class="card__tech"></p>
+                <ul class="card__links">
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li class="projects__list-item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__title"></h3>
+                <p class="card__description"></p>
+                <p class="card__tech"></p>
+                <ul class="card__links">
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li class="projects__list-item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__title"></h3>
+                <p class="card__description"></p>
+                <p class="card__tech"></p>
+                <ul class="card__links">
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+          <li class="projects__list-item">
+            <article class="card">
+              <div class="card__info">
+                <h3 class="card__title"></h3>
+                <p class="card__description"></p>
+                <p class="card__tech"></p>
+                <ul class="card__links">
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                  <li class="card__links-item">
+                    <a href="" class="card__link"></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <a href="#0" class="logo">
+          <img src="./images/icons/logo-footer.svg" alt="Логотип" />
+        </a>
+        <ul class="contacts" id="contacts">
+          <li class="contacts__item">
+            <a href="tel:+91 12345 09876">+91 12345 09876</a
+            ><a href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:info@example.com">info@example.com</a>
+          </li>
+        </ul>
+        <ul class="platform-list">
+          <li class="platform-list__item">
+            <a href="#0" class="platform-list__link">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon_type_gh">
+                <use href="./images/icons/gh.svg#gh-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="platform-list__item">
+            <a href="#0" class="platform-list__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon_type_twitter"
+              >
+                <use href="./images/icons/twitter.svg#twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="platform-list__item">
+            <a href="#0" class="platform-list__link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon_type_instagram"
+              >
+                <use href="./images/icons/instagram.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#about" class="menu__link">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#stack" class="menu__link">Tech Stack</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#projects" class="menu__link">Projects</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#contacts" class="menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="copyright">
+          Designed and built by Pavan MG with Love & Coffee
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon_type_gh">
-  <use href="./images/icons/gh.svg#gh-icon"></use>
-</svg> -->
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon_type_twitter">
-  <use href="./images/icons/twitter.svg#twitter-icon"></use>
-</svg> -->
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon_type_instagram">
-  <use href="./images/icons/instagram.svg#instagram-icon"></use>
-</svg> -->

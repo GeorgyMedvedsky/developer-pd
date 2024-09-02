@@ -2,86 +2,184 @@
   font-family: 'DM Sans';
   font-weight: 400;
   font-display: swap;
-  src: url(./DMSans-Regular.ttf) format('ttf');
+  src: url(/vendor/fonts/DMSans-Regular.ttf) format('truetype');
 }
-
 @font-face {
   font-family: 'DM Sans';
   font-weight: 500;
   font-display: swap;
-  src: url(./DMSans-Medium.ttf) format('ttf');
+  src: url(/vendor/fonts/DMSans-Medium.ttf) format('truetype');
 }
-
 @font-face {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 300;
   font-display: swap;
-  src: url(./Poppins-Light.ttf) format('ttf');
+  src: url(/vendor/fonts/Poppins-Light.ttf) format('truetype');
 }
-
 @font-face {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 400;
   font-display: swap;
-  src: url(./Poppins-Regular.ttf) format('ttf');
+  src: url(/vendor/fonts/Poppins-Regular.ttf) format('tttruetypef');
 }
-
 @font-face {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   font-display: swap;
-  src: url(./Poppins-Medium.ttf) format('ttf');
+  src: url(/vendor/fonts/Poppins-Medium.ttf) format('truetype');
 }
-
 @font-face {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 700;
   font-display: swap;
-  src: url(./Poppins-Bold.ttf) format('ttf');
+  src: url(/vendor/fonts/Poppins-Bold.ttf) format('truetype');
 }
-
 * {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
+html {
+  scroll-behavior: smooth;
 }
 
 .page {
   margin: 0;
-  font-family: Poppins, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px calc(50% - 500px) 60px;
 }
 
 .icon {
   width: 30px;
   height: 30px;
-  fill: #666;
+  fill: #666666;
   border-radius: 50%;
-  transition: fill 0.4s;
+  transition: 0.3s;
 }
-
 .icon:hover {
   cursor: pointer;
 }
-
 .icon_type_gh:hover {
   fill: #1f2328;
 }
-
 .icon_type_twitter:hover {
   fill: #0073ff;
 }
-
 .icon_type_instagram:hover {
   fill: #ee0a0a;
 }
+.icon_type_gh:active {
+  transform: scale(1.1);
+}
+.icon_type_twitter:active {
+  transform: scale(1.1);
+}
+.icon_type_instagram:active {
+  transform: scale(1.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__platform-list {
+  margin-left: 51px;
+}
+
+.logo {
+  display: flex;
+  width: 97px;
+  height: 69px;
+}
+.logo__image {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #666666;
+  font-weight: 500;
+}
+.menu__list {
+  display: flex;
+  gap: 67px;
+}
+.menu__link {
+  color: inherit;
+  transition: 0.3s;
+}
+.menu__link:hover {
+  color: #42446e;
+  text-shadow: 1px 1px 0 #666666;
+}
+.menu__link:active {
+  color: #000;
+}
+
+.platform-list {
+  display: flex;
+  gap: 20px;
+}
+.platform-list__link {
+  display: flex;
+}
+
+.section {
+  padding-top: 240px;
+}
+.section__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #42446e;
+}
+.section__subtitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #666666;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__avatar-wrapper {
+  display: flex;
+  border-radius: 50%;
+  padding: 9px;
+  background: linear-gradient(to bottom, #e70faa, #13b0f5);
+}
+.about__avatar {
+  width: 349px;
+  height: 349px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #42446e;
+}
+.title__block {
+  display: block;
+}
+.title__block_accent {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+} /*# sourceMappingURL=index.css.map */

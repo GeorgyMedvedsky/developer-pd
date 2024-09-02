@@ -1,0 +1,13 @@
+@mixin font-gradient($direction, $first-color, $second-color) {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to $direction, $first-color, $second-color);
+}
+
+@mixin font($size, $weight, $height, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $color;
+}

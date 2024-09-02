@@ -1,5 +1,15 @@
-@import '../fonts/font';
+@import './vars';
+@import './mixins';
+
+@import '../vendor/fonts/font';
 @import './page/page';
 @import './icon/icon';
 
-// @import './visually-hidden/visually-hidden';
+@import './header/header';
+@import './logo/logo';
+@import './menu/menu';
+@import './platform-list/platform-list';
+
+@import './section/section';
+@import './about/about';
+@import './title/title';

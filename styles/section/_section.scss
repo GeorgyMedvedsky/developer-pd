@@ -1,0 +1,13 @@
+.section {
+  padding-top: 240px;
+
+  &__title {
+    text-align: center;
+    @include font(48px, 700, 1.8, $font-color-heavy);
+  }
+
+  &__subtitle {
+    text-align: center;
+    @include font(32px, 400, 1.2, $font-color-grey);
+  }
+}

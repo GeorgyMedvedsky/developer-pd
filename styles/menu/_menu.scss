@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  color: $font-color-grey;
+  font-weight: 500;
+
+  &__list {
+    display: flex;
+    gap: 67px;
+  }
+
+  &__link {
+    color: inherit;
+    transition: $animation-duration;
+
+    &:hover {
+      color: $font-color-heavy;
+      text-shadow: 1px 1px 0 $font-color-grey;
+    }
+
+    &:active {
+      // @include font-gradient(left);
+      color: $font-color-black;
+    }
+  }
+}

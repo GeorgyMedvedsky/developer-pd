@@ -1,28 +1,37 @@
-@import '../vars';
-
 .icon {
-    width: 30px;
-    height: 30px;
-    fill: $icon-color-default;
-    border-radius: 50%;
-    transition: fill .4s;
+  width: 30px;
+  height: 30px;
+  fill: $icon-color-default;
+  border-radius: 50%;
+  transition: $animation-duration;
 
-    &:hover {
-        cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_type {
+    &_gh:hover {
+      fill: $icon-color-gh;
     }
 
-    &_type {
-
-        &_gh:hover {
-            fill: $icon-color-gh;
-        }
-
-        &_twitter:hover {   
-            fill: $icon-color-twitter;
-        }
-
-        &_instagram:hover {
-            fill: $icon-color-instagram;
-        }
+    &_twitter:hover {
+      fill: $icon-color-twitter;
     }
+
+    &_instagram:hover {
+      fill: $icon-color-instagram;
+    }
+
+    &_gh:active {
+      transform: $animation-link-active;
+    }
+
+    &_twitter:active {
+      transform: $animation-link-active;
+    }
+
+    &_instagram:active {
+      transform: $animation-link-active;
+    }
+  }
 }

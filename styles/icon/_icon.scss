@@ -1,0 +1,28 @@
+@import '../vars';
+
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: $icon-color-default;
+    border-radius: 50%;
+    transition: fill .4s;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &_type {
+
+        &_gh:hover {
+            fill: $icon-color-gh;
+        }
+
+        &_twitter:hover {   
+            fill: $icon-color-twitter;
+        }
+
+        &_instagram:hover {
+            fill: $icon-color-instagram;
+        }
+    }
+}

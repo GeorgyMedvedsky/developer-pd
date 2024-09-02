@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-display: swap;
+  src: url(./DMSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-display: swap;
+  src: url(./DMSans-Medium.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  font-display: swap;
+  src: url(./Poppins-Light.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./Poppins-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./Poppins-Medium.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./Poppins-Bold.ttf) format('ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  margin: 0;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: #666;
+  border-radius: 50%;
+  transition: fill 0.4s;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon_type_gh:hover {
+  fill: #1f2328;
+}
+
+.icon_type_twitter:hover {
+  fill: #0073ff;
+}
+
+.icon_type_instagram:hover {
+  fill: #ee0a0a;
+}

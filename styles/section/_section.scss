@@ -1,5 +1,5 @@
 .section {
-  padding-top: 240px;
+  margin-top: 240px;
 
   &__title {
     text-align: center;
@@ -9,5 +9,9 @@
   &__subtitle {
     text-align: center;
     @include font(32px, 400, 1.2, $font-color-grey);
+  }
+
+  &__content {
+    margin-top: 140px;
   }
 }

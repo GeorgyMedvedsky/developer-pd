@@ -1,0 +1,12 @@
+.stack-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    row-gap: 78px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

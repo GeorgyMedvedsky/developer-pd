@@ -15,13 +15,7 @@
     transition: $animation-duration;
 
     &:hover {
-      color: $font-color-heavy;
-      text-shadow: 1px 1px 0 $font-color-grey;
-    }
-
-    &:active {
-      // @include font-gradient(left);
-      color: $font-color-black;
+      color: $link-color-hover;
     }
   }
 }

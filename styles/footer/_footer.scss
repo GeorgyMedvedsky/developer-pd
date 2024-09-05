@@ -1,0 +1,45 @@
+.footer {
+    padding-top: 203px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 96px;
+        padding-bottom: 42px;
+        border-bottom: 2px solid #d9d9d9;
+    }
+
+    &__contacts {
+        display: flex;
+        margin-left: auto;
+        gap: 64px;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    &__contacts-link {
+        @include font(18px, 400, 1.2, $font-color-heavy);
+        transition: $animation-duration;
+
+        &:hover {
+            color: $link-color-hover;
+          }
+    }
+
+    &__bottom {
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+        @include font(18px, 400, 1.2, $font-color-grey);
+
+        &_default {
+            @include font-gradient(right, $font-color-grey, $font-color-grey); 
+        }
+
+        &_accent {
+            @include font-gradient(right, $color-light-blue, $color-fuksy);
+        }
+    }
+}

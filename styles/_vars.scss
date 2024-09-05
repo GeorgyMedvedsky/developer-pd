@@ -1,16 +1,18 @@
 // Colors
-$icon-color-default: #666666;
+$icon-color-default: #666;
 $icon-color-gh: #1f2328;
 $icon-color-twitter: #0073ff;
 $icon-color-instagram: #ee0a0a;
 
-$font-color-grey: #666666;
+$font-color-grey: #666;
 $font-color-black: #000;
 $font-color-heavy: #42446e;
 
 $color-fuksy: #e70faa;
 $color-light-blue: #13b0f5;
 $gradient: linear-gradient(to bottom, $color-fuksy, $color-light-blue);
+
+$link-color-hover: $color-light-blue;
 
 // Animation
 $animation-link-active: scale(1.1);

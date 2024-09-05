@@ -1,0 +1,6 @@
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    gap: 62px 47px;
+    justify-content: center;
+}

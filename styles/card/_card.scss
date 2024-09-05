@@ -41,13 +41,13 @@
         transition: $animation-duration;
 
         &_type_link::before {
-            content: url(/images/icons/anchor-link.svg);
+            content: url(../images/icons/anchor-link.svg);
             margin-right: 10px;
             transition: $animation-duration;
         }
         
         &_type_code::before {
-            content: url(/images/icons/gh-link.svg);
+            content: url(../images/icons/gh-link.svg);
             margin-right: 10px;
             transition: $animation-duration;
         }

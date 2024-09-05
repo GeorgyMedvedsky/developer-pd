@@ -254,12 +254,12 @@ html {
   transition: 0.3s;
 }
 .card__link_type_link::before {
-  content: url(/images/icons/anchor-link.svg);
+  content: url(../images/icons/anchor-link.svg);
   margin-right: 10px;
   transition: 0.3s;
 }
 .card__link_type_code::before {
-  content: url(/images/icons/gh-link.svg);
+  content: url(../images/icons/gh-link.svg);
   margin-right: 10px;
   transition: 0.3s;
 }

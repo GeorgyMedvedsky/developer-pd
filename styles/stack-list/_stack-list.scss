@@ -1,12 +1,32 @@
 .stack-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    row-gap: 78px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px 35px;
 
-    &__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  &__item {
+    display: flex;
+    flex-basis: 135px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 140px;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .stack-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .stack-list {
+    gap: 70px 25px;
+  }
+}
+
+@media screen and (max-width: $mobile-large) {
+  .stack-list {
+    gap: 30px 25px;
+  }
 }

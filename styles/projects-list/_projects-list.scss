@@ -1,6 +1,24 @@
 .projects-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, max-content));
-    gap: 62px 47px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 62px 47px;
+  justify-content: center;
+}
+
+@media screen and (max-width: $desktop) {
+  .projects-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: $tablet-large) {
+  .projects-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .projects-list {
+    row-gap: 50px;
+  }
 }

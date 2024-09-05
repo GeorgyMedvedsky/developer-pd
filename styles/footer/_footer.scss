@@ -1,45 +1,118 @@
 .footer {
-    padding-top: 203px;
+  padding-top: 203px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    padding-bottom: 42px;
+    border-bottom: 2px solid #d9d9d9;
+  }
+
+  &__contacts {
+    display: flex;
+    margin-left: auto;
+    gap: 64px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  &__contacts-link {
+    @include font(18px, 400, 1.2, $font-color-heavy);
+    transition: $animation-duration;
+
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
+  &__bottom {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    color: $font-color-grey;
+    font-weight: 500;
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__menu-link {
+    color: inherit;
+    transition: $animation-duration;
+
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
+  &__copyright {
+    @include font(18px, 400, 1.2, $font-color-grey);
+
+    &_default {
+      @include font-gradient(right, $font-color-grey, $font-color-grey);
+    }
+
+    &_accent {
+      @include font-gradient(right, $color-light-blue, $color-fuksy);
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .footer__bottom {
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $tablet-large) {
+  .footer {
+    padding-top: 120px;
+
+    &__contacts {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-large) {
+  .footer {
+    padding-top: 60px;
 
     &__top {
-        display: flex;
-        align-items: center;
-        gap: 96px;
-        padding-bottom: 42px;
-        border-bottom: 2px solid #d9d9d9;
+      flex-direction: column;
+      gap: 30px;
     }
 
     &__contacts {
-        display: flex;
-        margin-left: auto;
-        gap: 64px;
-        font-family: 'DM Sans', sans-serif;
-    }
-    
-    &__contacts-link {
-        @include font(18px, 400, 1.2, $font-color-heavy);
-        transition: $animation-duration;
-
-        &:hover {
-            color: $link-color-hover;
-          }
+      flex-direction: column;
+      margin: 0;
+      gap: 10px;
     }
 
     &__bottom {
-        padding-top: 60px;
-        display: flex;
-        justify-content: space-between;
+      padding-top: 30px;
+    }
+
+    &__menu-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
     &__copyright {
-        @include font(18px, 400, 1.2, $font-color-grey);
-
-        &_default {
-            @include font-gradient(right, $font-color-grey, $font-color-grey); 
-        }
-
-        &_accent {
-            @include font-gradient(right, $color-light-blue, $color-fuksy);
-        }
+      font-size: 14px;
+      text-align: center;
     }
+  }
 }

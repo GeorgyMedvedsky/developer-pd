@@ -1,6 +1,4 @@
 .section {
-  margin-top: 240px;
-
   &__title {
     text-align: center;
     @include font(48px, 700, 1.8, $font-color-heavy);
@@ -13,5 +11,126 @@
 
   &__content {
     margin-top: 140px;
+  }
+
+  &__about {
+    margin-top: $section-margin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__about-avatar-wrapper {
+    display: flex;
+    border-radius: 50%;
+    padding: 9px;
+    background: $gradient;
+  }
+
+  &__about-avatar {
+    width: 349px;
+    height: 349px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  &__stack {
+    margin-top: $section-margin;
+  }
+
+  &__projects {
+    margin-top: $section-margin;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .section {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+    }
+
+    &__about {
+      margin-top: $section-margin-1280;
+    }
+
+    &__stack {
+      margin-top: $section-margin-1280;
+    }
+
+    &__projects {
+      margin-top: $section-margin-1280;
+    }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .section {
+    &__about {
+      margin-top: $section-margin-1024;
+    }
+
+    &__about-avatar {
+      width: 280px;
+      height: 280px;
+    }
+
+    &__stack {
+      margin-top: $section-margin-1024;
+    }
+
+    &__projects {
+      margin-top: $section-margin-1024;
+    }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .section {
+    &__about {
+      margin-top: $section-margin-780;
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+
+    &__about-title {
+      text-align: center;
+    }
+
+    &__content {
+      margin-top: 100px;
+    }
+
+    &__stack {
+      margin-top: $section-margin-780;
+    }
+
+    &__projects {
+      margin-top: $section-margin-780;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-large) {
+  .section {
+    &__about {
+      margin-top: $section-margin-480;
+    }
+
+    &__content {
+      margin-top: 60px;
+    }
+
+    &__stack {
+      margin-top: $section-margin-480;
+    }
+
+    &__projects {
+      margin-top: $section-margin-480;
+    }
   }
 }

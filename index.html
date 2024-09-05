@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="icon" href="./images/icons/logo-header.ico" sizes="any">
-    <link rel="icon" href="./images/icons/logo-header.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png">
-    <meta property="og:title" content="Pavan MG">
-    <meta property="og:description" content="My name is Pavan MG, I build things for web and this is my site">
-    <meta property="og:url" content="https://georgymedvedsky.github.io/developer-pd/">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1611647832580-377268dba7cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta name="description" content="My name is Pavan MG, I build things for web and this is my site">
+    <link rel="icon" href="./images/icons/logo-header.ico" sizes="any" />
+    <link
+      rel="icon"
+      href="./images/icons/logo-header.svg"
+      type="image/svg+xml"
+    />
+    <link rel="apple-touch-icon" href="./images/icons/apple-touch-icon.png" />
+    <meta property="og:title" content="Pavan MG" />
+    <meta
+      property="og:description"
+      content="My name is Pavan MG, I build things for web and this is my site"
+    />
+    <meta
+      property="og:url"
+      content="https://georgymedvedsky.github.io/developer-pd/"
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1611647832580-377268dba7cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="description"
+      content="My name is Pavan MG, I build things for web and this is my site"
+    />
     <title>Pavan MG</title>
   </head>
   <body class="page">
@@ -73,24 +89,27 @@
           </li>
         </ul>
       </nav>
+      <div class="burger">
+        <span class="burger__element"></span>
+      </div>
     </header>
     <main class="main">
-      <section class="section about" id="about">
-        <h1 class="title about__title">
+      <section class="section section__about about" id="about">
+        <h1 class="title section__about-title">
           <span class="title__block">Hi &#128075;,</span>
           <span class="title__block">My name is</span>
           <span class="title__block title__block_accent">Pavan MG</span>
           <span class="title__block">I build things for web</span>
         </h1>
-        <div class="about__avatar-wrapper">
+        <div class="section__about-avatar-wrapper">
           <img
-            class="about__avatar"
+            class="section__about-avatar"
             src="./images/avatar.webp"
             alt="Черно-белая портретная фотография мужчины в футболке и солнцезащитных очках"
           />
         </div>
       </section>
-      <section class="section stack" id="stack">
+      <section class="section section__stack" id="stack">
         <h2 class="section__title">My tech stack</h2>
         <p class="section__subtitle">
           Technologies I've been working with recently
@@ -112,7 +131,11 @@
             <img src="./images/redux.svg" alt="" class="stack-list__image" />
           </li>
           <li class="stack-list__item">
-            <img src="./images/bootstrap.svg" alt="" class="stack-list__image" />
+            <img
+              src="./images/bootstrap.svg"
+              alt=""
+              class="stack-list__image"
+            />
           </li>
           <li class="stack-list__item">
             <img src="./images/tailwind.svg" alt="" class="stack-list__image" />
@@ -134,7 +157,7 @@
           </li>
         </ul>
       </section>
-      <section class="section projects" id="projects">
+      <section class="section section__projects" id="projects">
         <h2 class="section__title">Projects</h2>
         <p class="section__subtitle">Things I've built so far</p>
         <ul class="projects-list section__content"></ul>
@@ -147,11 +170,14 @@
         </a>
         <ul class="footer__contacts" id="contacts">
           <li class="footer__contacts-item">
-            <a href="tel:+911234509876" class="footer__contacts-link">+91 12345 09876</a
+            <a href="tel:+911234509876" class="footer__contacts-link"
+              >+91 12345 09876</a
             >
           </li>
           <li class="footer__contacts-item">
-            <a href="mailto:info@example.com" class="footer__contacts-link">info@example.com</a>
+            <a href="mailto:info@example.com" class="footer__contacts-link"
+              >info@example.com</a
+            >
           </li>
         </ul>
         <ul class="platform-list">
@@ -185,27 +211,31 @@
         </ul>
       </div>
       <div class="footer__bottom">
-        <nav class="menu">
-          <ul class="menu__list">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
             <li class="menu__list-item">
-              <a href="index.html" class="menu__link">Home</a>
+              <a href="index.html" class="footer__menu-link">Home</a>
             </li>
             <li class="menu__list-item">
-              <a href="#about" class="menu__link">About</a>
+              <a href="#about" class="footer__menu-link">About</a>
             </li>
             <li class="menu__list-item">
-              <a href="#stack" class="menu__link">Tech Stack</a>
+              <a href="#stack" class="footer__menu-link">Tech Stack</a>
             </li>
             <li class="menu__list-item">
-              <a href="#projects" class="menu__link">Projects</a>
+              <a href="#projects" class="footer__menu-link">Projects</a>
             </li>
             <li class="menu__list-item">
-              <a href="#contacts" class="menu__link">Contact</a>
+              <a href="#contacts" class="footer__menu-link">Contact</a>
             </li>
           </ul>
         </nav>
         <p class="footer__copyright">
-          Designed and built by <span class="footer__copyright_accent">Pavan MG <span class="footer__copyright_default">with</span> Love & Coffee</span>
+          Designed and built by
+          <span class="footer__copyright_accent"
+            >Pavan MG <span class="footer__copyright_default">with</span> Love &
+            Coffee</span
+          >
         </p>
       </div>
     </footer>
@@ -217,13 +247,20 @@
           <div class="card__info">
             <h3 class="card__title"></h3>
             <p class="card__description"></p>
-            <p class="card__tech"><span class="card__tech_accent">Tech stack:</span> HTML , JavaScript, SASS, React</p>
+            <p class="card__tech">
+              <span class="card__tech_accent">Tech stack:</span> HTML ,
+              JavaScript, SASS, React
+            </p>
             <ul class="card__links">
               <li class="card__links-item">
-                <a href="#0" class="card__link card__link_type_link">Live Preview</a>
+                <a href="#0" class="card__link card__link_type_link"
+                  >Live Preview</a
+                >
               </li>
               <li class="card__links-item">
-                <a href="#0" class="card__link card__link_type_code">View Code</a>
+                <a href="#0" class="card__link card__link_type_code"
+                  >View Code</a
+                >
               </li>
             </ul>
           </div>

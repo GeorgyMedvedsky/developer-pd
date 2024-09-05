@@ -4,6 +4,7 @@ $icon-color-gh: #1f2328;
 $icon-color-twitter: #0073ff;
 $icon-color-instagram: #ee0a0a;
 
+$font-color-white: #ebebeb;
 $font-color-grey: #666;
 $font-color-black: #000;
 $font-color-heavy: #42446e;
@@ -17,3 +18,19 @@ $link-color-hover: $color-light-blue;
 // Animation
 $animation-link-active: scale(1.1);
 $animation-duration: 0.3s;
+
+// Display resolution
+$desktop-large: 1440px;
+$desktop: 1280px;
+$laptop: 1024px;
+$tablet-large: 900px;
+$tablet: 780px;
+$mobile-large: 480px;
+$mobile: 320px;
+
+// Margin
+$section-margin: 240px;
+$section-margin-1280: 200px;
+$section-margin-1024: 160px;
+$section-margin-780: 120px;
+$section-margin-480: 80px;

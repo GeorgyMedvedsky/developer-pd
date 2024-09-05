@@ -9,3 +9,9 @@
     }
   }
 }
+
+@media screen and (max-width: $desktop) {
+  .title {
+    font-size: 52px;
+  }
+}

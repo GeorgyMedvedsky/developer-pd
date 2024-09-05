@@ -7,3 +7,9 @@
     margin-left: 51px;
   }
 }
+
+@media screen and (max-width: $laptop) {
+  .header__platform-list {
+    margin: 0;
+  }
+}

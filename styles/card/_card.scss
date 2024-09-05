@@ -1,71 +1,82 @@
 .card {
-    width: 373px;
-    padding-top: 260px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
+  min-width: 373px;
+  padding-top: 260px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
 
-    &__info {
-        padding: 28px;
-        background-color: #fff;
-        border-radius: 0 0 20px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 17px;
+  &__info {
+    padding: 28px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  &__title {
+    @include font(28px, 500, 1.2, $font-color-black);
+  }
+
+  &__description {
+    @include font(18px, 300, 1.2, $font-color-grey);
+  }
+
+  &__tech {
+    @include font(14px, 300, 1.2, $font-color-grey);
+
+    &_accent {
+      @include font(16px, 400, 1.2, $font-color-black);
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @include font(16px, 400, 1.2, $font-color-black);
+    display: flex;
+    text-decoration: underline;
+    transition: $animation-duration;
+
+    &_type_link::before {
+      content: url(../images/icons/anchor-link.svg);
+      margin-right: 10px;
+      transition: $animation-duration;
     }
 
-    &__title {
-        @include font(28px, 500, 1.2, $font-color-black);
+    &_type_code::before {
+      content: url(../images/icons/gh-link.svg);
+      margin-right: 10px;
+      transition: $animation-duration;
     }
 
-    &__description {
-        @include font(18px, 300, 1.2, $font-color-grey);
+    &:hover {
+      color: $link-color-hover;
     }
 
-    &__tech {
-        @include font(14px, 300, 1.2, $font-color-grey);
-
-        &_accent {
-            @include font(16px, 400, 1.2, $font-color-black);
-        }
+    &:active {
+      opacity: 0.5;
     }
+
+    &_type_link:active::before {
+      opacity: 0.5;
+    }
+
+    &_type_code:active::before {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-large) {
+  .card {
+    min-width: auto;
 
     &__links {
-        display: flex;
-        justify-content: space-between;
+      flex-direction: column;
+      gap: 10px;
     }
-
-    &__link {
-        @include font(16px, 400, 1.2, $font-color-black);
-        display: flex;
-        text-decoration: underline;
-        transition: $animation-duration;
-
-        &_type_link::before {
-            content: url(../images/icons/anchor-link.svg);
-            margin-right: 10px;
-            transition: $animation-duration;
-        }
-        
-        &_type_code::before {
-            content: url(../images/icons/gh-link.svg);
-            margin-right: 10px;
-            transition: $animation-duration;
-        }
-
-        &:hover {
-            color: $link-color-hover;
-        }
-
-        &:active {
-            opacity: .5;
-        }
-
-        &_type_link:active::before {
-            opacity: .5;
-        }
-        
-        &_type_code:active::before {
-            opacity: .5;
-        }
-    }
+  }
 }

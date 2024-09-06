@@ -391,7 +391,7 @@ html {
   transform: scale(0);
 }
 .burger.active::before {
-  top: 50%;
+  top: 47%;
   transform: rotate(-45deg) translate(0, -50%);
   background-color: #ebebeb;
 }
